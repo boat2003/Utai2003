@@ -1,0 +1,45 @@
+body {
+    background-image: url('Ja2.jpg'); /* เปลี่ยนชื่อไฟล์รูปภาพตามที่คุณตั้งชื่อ */
+    background-size: cover; /* ปรับขนาดรูปภาพให้เต็มพื้นหลัง */
+    background-repeat: no-repeat; /* ไม่ทำซ้ำรูปภาพ */
+    background-attachment: fixed; /* รูปภาพจะติดตามการเลื่อนหน้าเว็บ */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000000; /* เพิ่มเส้นขอบด้านนอก */
+    
+}
+
+table td {
+    border: 1px solid #000000; /* เพิ่มเส้นขอบด้านใน */
+    padding: 5px;
+}
+
+table th {
+    border: 1px solid #000000; /* เพิ่มเส้นขอบด้านใน */
+    padding: 5px;
+    backdrop-filter: blur(15px);
+    color: #FFFFFF;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000000; /* เพิ่มเส้นขอบด้านนอก */
+    white-space: nowrap; /* ไม่ให้เนื้อหาขยับไปข้างนอก */
+}
+a[href="main_webboard.php"] {
+    display: inline-block;
+    padding: auto; /* ปรับขนาดของปุ่มตามที่คุณต้องการ */
+    color: #000000; /* สีข้อความ */
+    text-decoration: none; /* ลบ underline ของลิงก์ */
+}
+a[href="main_webboard.php"]:hover {
+    color: #ff0101; /* สีพื้นหลังของปุ่มเมื่อเมาส์ hover อยู่บนปุ่ม */
+}
+input[type="text"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.508); /* ปรับค่าเบลอที่นี่ */
+    padding: 5px; /* ปรับค่าการเพิ่มขอบของช่องใส่ข้อมูล */
+}

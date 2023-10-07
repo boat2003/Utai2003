@@ -1,0 +1,69 @@
+* {
+    margin:0;
+    padding:0 ;
+    }
+.homeheader {
+    width: 100%;
+    background-color: rgb(197, 204, 202);
+    color: #090909; /* สีข้อความใน header */
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.menu p a{
+    margin-left: 10px;
+}
+.homepage{
+    margin-left: 10px;
+}
+.center-text {
+    text-align: center; 
+}
+.custom-link{
+    text-decoration: none;
+    color: #090909; 
+}
+section {
+    position: relative; /* ตั้งค่าเป็น relative เพื่อให้เป็นตำแหน่งหลักสำหรับเพิ่มข้อความลงไป */
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('muay.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-overlay {
+    position: absolute; /* ตั้งค่าเป็น absolute เพื่อกำหนดตำแหน่งของข้อความ */
+    top: 50%; /* ตั้งค่าตำแหน่งด้านบนของกล่อง */
+    left: 50%; /* ตั้งค่าตำแหน่งด้านซ้ายของกล่อง */
+    transform: translate(-50%, -50%); /* ใช้ transform เพื่อย้ายกล่องไปตรงกลางของภาพ */
+    z-index: 2; /* ตั้งค่า z-index เพื่อให้ข้อความอยู่ข้างบนภาพ */
+    backdrop-filter: blur(50px);
+     width: 80%; /* เพิ่มความกว้างของกล่องเป็น 80% ของพื้นที่ที่ครอบ */
+    height: 40%; /* เพิ่มความสูงของกล่องเป็น 60% ของพื้นที่ที่ครอบ */
+    
+    color: aliceblue;
+    padding: 20px; /* เพิ่มการเสริมขอบของกล่อง */
+    border: 2px solid #ffffff5a; /* เพิ่มเส้นขอบของกล่อง */
+    border-radius: 10px; /* เพิ่มมุมโค้งให้กับกล่อง */
+}
+
+.text-overlay h1 {
+    font-family: 'Arial', sans-serif; 
+}
+
+.text-overlay p {
+    font-family: 'Times New Roman', serif; 
+}
